@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background: #111;
+  font-family: Inter;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+  margin: 2rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.formCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vw;
+  row-gap: 2rem;
+}
+.formCont > input {
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 25vw;
+  padding: 1rem;
+}
+
+.btn {
+  display: block;
+  margin-block: 2rem;
+  width: 35rem;
+  height: 4rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#Search {
+  margin-block: 3rem;
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem;
+  width: 90%;
+}
+
+#table {
+  background-color: transparent;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead,
+tbody {
+  border: 1px solid white;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+th {
+  text-align: left;
+}
+
+.cell-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cell-block div img {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .formCont {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .formCont > input {
+    width: 90%;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}
